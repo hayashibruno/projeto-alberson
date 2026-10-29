@@ -1,0 +1,4 @@
+pip install reportlab
+pip install pandas
+
+Alterar do arquivo (xlsx)

@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasileirão 2026 - Classificação</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07131d;
+            color: #f1f5f9;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(120deg, #06131d, #123443, #06131d);
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        header h1 span {
+            color: #4ade80;
+        }
+
+        header p {
+            color: #a9bdca;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        main {
+            width: 94%;
+            max-width: 1200px;
+            margin: 35px auto;
+            padding: 25px;
+            background: #0a1925;
+            border: 1px solid #203747;
+            border-radius: 14px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 25px;
+            padding-left: 14px;
+        }
+
+        .tabela-container {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 9px;
+            border: 1px solid #233b4c;
+        }
+
+        table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background: #172b3b;
+        }
+
+        th {
+            padding: 16px 12px;
+            color: #a9bdca;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 14px 12px;
+            text-align: center;
+            border-bottom: 1px solid #20303d;
+        }
+
+        td:nth-child(2) {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        tbody tr {
+            background: #0b1a27;
+            transition: background 0.2s;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #102231;
+        }
+
+        tbody tr:hover {
+            background: #1a3745;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        td:last-child {
+            color: #4ade80;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+
+        .botao-pdf {
+            display: inline-block;
+            padding: 14px 22px;
+            background: linear-gradient(135deg, #4ade80, #16a34a);
+            color: #052e16;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .botao-pdf:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BRASILEIRÃO <span>2026</span></h1>
+        <p>Classificação do Campeonato Brasileiro</p>
+    </header>
+
+    <main>
+        <h2>Tabela de Classificação</h2>
+
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Time</th>
+                        <th>Jogos</th>
+                        <th>Vitórias</th>
+                        <th>Empates</th>
+                        <th>Derrotas</th>
+                        <th>Pontos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Flamengo</td>
+                        <td>30</td>
+                        <td>19</td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>64</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2</td>
+                        <td>Palmeiras</td>
+                        <td>30</td>
+                        <td>18</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>63</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>3</td>
+                        <td>Athletico-PR</td>
+                        <td>30</td>
+                        <td>15</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>53</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>4</td>
+                        <td>Fluminense</td>
+                        <td>30</td>
+                        <td>14</td>
+                        <td>9</td>
+                        <td>7</td>
+                        <td>51</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>5</td>
+                        <td>Bahia</td>
+                        <td>30</td>
+                        <td>13</td>
+                        <td>10</td>
+                        <td>7</td>
+                        <td>49</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>6</td>
+                        <td>Cruzeiro</td>
+                        <td>30</td>
+                        <td>14</td>
+                        <td>6</td>
+                        <td>10</td>
+                        <td>48</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>7</td>
+                        <td>Atlético-MG</td>
+                        <td>30</td>
+                        <td>13</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>47</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>8</td>
+                        <td>Santos</td>
+                        <td>30</td>
+                        <td>11</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>42</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>9</td>
+                        <td>Red Bull Bragantino</td>
+                        <td>30</td>
+                        <td>11</td>
+                        <td>7</td>
+                        <td>12</td>
+                        <td>40</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>10</td>
+                        <td>Coritiba</td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td>39</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>10</td>
+                        <td>São Paulo</td>
+                        <td>30</td>
+                        <td>11</td>
+                        <td>6</td>
+                        <td>13</td>
+                        <td>39</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>12</td>
+                        <td>Botafogo</td>
+                        <td>30</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>12</td>
+                        <td>36</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>12</td>
+                        <td>Vitória</td>
+                        <td>30</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>14</td>
+                        <td>36</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>14</td>
+                        <td>Vasco</td>
+                        <td>29</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>35</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>15</td>
+                        <td>Mirassol</td>
+                        <td>30</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>13</td>
+                        <td>33</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>16</td>
+                        <td>Internacional</td>
+                        <td>30</td>
+                        <td>7</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>32</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>16</td>
+                        <td>Corinthians</td>
+                        <td>30</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>14</td>
+                        <td>32</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>18</td>
+                        <td>Grêmio</td>
+                        <td>30</td>
+                        <td>7</td>
+                        <td>10</td>
+                        <td>13</td>
+                        <td>31</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>19</td>
+                        <td>Remo</td>
+                        <td>30</td>
+                        <td>5</td>
+                        <td>10</td>
+                        <td>15</td>
+                        <td>25</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>20</td>
+                        <td>Chapecoense</td>
+                        <td>29</td>
+                        <td>3</td>
+                        <td>9</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <div class="botoes">
+            <a href="Campeonato%20Brasileiro.pdf"
+               target="_blank"
+               class="botao-pdf">
+                Abrir classificação em PDF
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
