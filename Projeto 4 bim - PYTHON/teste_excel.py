@@ -61,11 +61,11 @@ def gerarpdf(nomes, pontos_lista, posicoes, times):
         pdf.setFont("Helvetica-Bold", 10)
         pdf.drawString(30, 740, "Pos.")
         pdf.drawString(75, 740, "Time")
-        pdf.drawString(300, 740, "Jogos")
-        pdf.drawString(370, 740, "Vitórias")
-        pdf.drawString(450, 740, "Empates")
-        pdf.drawString(540, 740, "Derrotas")
-        pdf.drawString(640, 740, "Pontos")
+        pdf.drawString(250, 740, "Jogos")
+        pdf.drawString(310, 740, "Vitórias")
+        pdf.drawString(380, 740, "Empates")
+        pdf.drawString(450, 740, "Derrotas")
+        pdf.drawString(525, 740, "Pontos")
 
         y = 720
 
@@ -74,11 +74,11 @@ def gerarpdf(nomes, pontos_lista, posicoes, times):
                 if nomes[i] == times.iloc[j, 0]:
                     pdf.drawString(30, y, str(posicoes[i]))
                     pdf.drawString(75, y, str(nomes[i]))
-                    pdf.drawString(300, y, str(times.iloc[j, 1]))
-                    pdf.drawString(370, y, str(times.iloc[j, 2]))
-                    pdf.drawString(450, y, str(times.iloc[j, 3]))
-                    pdf.drawString(540, y, str(times.iloc[j, 4]))
-                    pdf.drawString(640, y, str(pontos_lista[i]))
+                    pdf.drawString(250, y, str(times.iloc[j, 1]))
+                    pdf.drawString(310, y, str(times.iloc[j, 2]))
+                    pdf.drawString(380, y, str(times.iloc[j, 3]))
+                    pdf.drawString(450, y, str(times.iloc[j, 4]))
+                    pdf.drawString(525, y, str(pontos_lista[i]))
 
             y = y - 20
         
